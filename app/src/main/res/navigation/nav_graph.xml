@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.muhammedguven.rickandmortyapp.ui.characterlist.CharacterListFragment"
+        android:label="CharacterListFragment">
+       <action
+           android:id="@+id/openCharacterDetail"
+           app:destination="@+id/characterDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.muhammedguven.rickandmortyapp.ui.characterdetail.CharacterDetailFragment"
+        android:label="CharacterDetailFragment">
+        <argument
+            android:name="characterId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
