@@ -1,7 +1,6 @@
 # RickAndMortyArchitectureApp
 
-#Libraries
-
+## Used Libraries
 ##### Dagger & Hilt
 ##### Lifecycle
 ##### Retrofit
